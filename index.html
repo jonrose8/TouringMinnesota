@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--Doctype-->
+<html lang="en">
+<!--language-->
+
+<head>
+    <!--title and meta go here-->
+    <title>Touring Minnesota</title>
+    <!--shown on tab-->
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--character set-->
+    <!--added viewport metatag to improve display on mobile devices-->
+    <!--
+
+    Touring Minnesota
+    Author: Jonathan Rose
+    Date: 04/01/2023
+   
+    
+    -->
+    <link rel="stylesheet" href="minnesota.css">
+    <!--links to css-->
+</head>
+
+<body>
+    <!--everything you see on the page-->
+    <nav>
+        <!--nav bar with links to other pages-->
+        <ul>
+            <!--unordered list for nav links-->
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="downtownmpls.html">Downtown MPLS</a>
+            </li>
+            <li>
+                <a href="moa.html">MOA</a>
+            </li>
+            <li>
+                <a href="northernlights.html">Northern Lights</a>
+            </li>
+            <li>
+                <a href="statefair.html">State Fair</a>
+            </li>
+        </ul>
+    </nav>
+    <!--moved nav above header-->
+    <header class="home">
+        <!-- header wrapper-->
+        <h1>
+            <a href="index.html">Touring Minnesota</a>
+            <!--header is now a link-->
+        </h1>
+        <!--main header-->
+    </header>
+    <div id="wrapper">
+        <!--wrapper div contains main and footer-->
+        <main>
+            <!--main section-->
+            <!--removed image element-->
+            <h2>Homepage</h2>
+            <!--secondary header-->
+            <p>
+                <!--paragraph-->
+                This is the home page for several of the prominent tourist sites that are visited often in Minnesota.
+                Please feel free to use this information to guide your visit of the land of 10,000 lakes!
+                We hope that you enjoy your stay and come back and visit us often!
+                Please contact us below with any questions or recommendations on other landmarks and or events within the state that
+                you might like added. We understand that this site does not cover them all. Thanks again!
+            </p>
+
+            <p>
+                Required fields are marked with an asterisk *.
+            </p>
+            <form method="post" action="https://webdevbasics.net/scripts/yoga.php">
+                <!--securely sends this item to the address to run a script-->
+                <label for="myName">* Name:</label>
+                <!--label is what that row of the form is labeled-->
+                <input type="text" id="myName" required="required">
+                <!--input type sets what type of input-->
+                <label for="myEmail">* E-mail:</label>
+                <input type="email" name="myEmail" id="myEmail" required="required">
+                <label for="howDidYouHearAboutUs">How did you hear about us?</label>
+                <input type="text" list="howDidYouHearAboutUs">
+                <datalist id="howDidYouHearAboutUs">
+                    <!--datalist should put a list of items in the box to choose from, but I'm having issues with it-->
+                    <option>
+                        <!--option should be an option for datalist, but I'm having issues getting that to work.-->
+                        Google
+                    </option>
+                    <option>
+                        Bing
+                    </option>
+                    <option>
+                        Facebook
+                    </option>
+                    <option>
+                        Friend
+                    </option>
+                    <option>
+                        Radio Ad
+                    </option>
+                </datalist>
+
+                <label for="mycomments">* Comments?<br>Suggestions? </label> 
+                <textarea name="myComments" id="myComments" rows="2" cols="20" required="required">
+                </textarea>
+                <input type="submit" value="Send Now">
+
+            </form>
+
+           
+
+            <div>
+                <!--divider for address and phone number-->
+                952 Bryant Ave <br>
+                Minneapolis, MN 55455 <br>
+                612-555-5555 <br><br>
+            </div>
+        </main>
+        <footer>
+            <!--footer for copyright and email link-->
+            Copyright &copy; 2023 Touring Minnesota<br>
+            <a href="mailto:jonathan.rose2001@yahoo.com">Jonathan Rose</a>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,343 @@
+/*
+
+Touring Minnesota
+Author: Jonathan Rose
+Date: 04/01/2023
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(statefair.jpg);
+    color: #0502a9;
+    background-color: #00FA15;
+    background-size: 100% 100%;
+    margin-top: 50px;
+    font-size: 90%;
+    min-height: 200px;
+    /*set min height to 200px*/
+    /*set font size to 90%*/
+    /* background and text color for the main header */
+    /* uses statefair as the background image*/
+    /* added a 50 pixel top margin */
+}
+
+header a {
+    /*header links */
+    text-decoration: none;
+    /*no link underline */
+}
+
+header a:link {
+    /* default state of link */
+    color: #FFFFFF;
+    /* text color white */
+}
+
+header a:visited {
+    /*link state after visited */
+    color: #FFFFFF;
+    /* text color white */
+}
+
+header a:hover {
+    /*link when hovering */
+    color: #EDF5F5;
+    /* text color whitish */
+}
+
+nav {
+    text-align: right;
+    /* configures text in the nav bar to be aligned right */
+    /* removed bold */
+    background-color: #FFFFFF;
+    color: #0502a9;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    /* configured background color, margin, and padding for the nav bar */
+    position: fixed;
+    /* keeps position fixed in place */
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: auto;
+    /*changed height to auto*/
+    /* should keep the nav bar in the top left with a certain height and width */
+    /* z-index indicates that this will be on top of items 1-9998 */
+}
+
+nav a {
+    /*nav links */
+    text-decoration: none;
+    /* removes the underline for hyperlinks */
+}
+
+nav ul {
+    /*nav unordered list */
+    list-style-type: none;
+    margin: 0;
+    padding-right: 2em;
+    font-size: 1.2em;
+    /* no list markers displayed, no margin, some padding on the right and text is slightly larger */
+}
+
+nav li {
+    /*nav list items */
+    display: inline;
+    padding-left: 2em;
+    width: 30%;
+    /*set width to 30%*/
+    /*displays in line and has some left padding */
+}
+
+nav a:link {
+    /*default link state */
+    color: #3F2860;
+}
+
+nav a:visited {
+    /*link that has been visited */
+    color: #497777;
+}
+
+nav a:hover {
+    /*link when you hover over it */
+    color: #A26100;
+}
+
+#wrapper {
+    /* pound sign is for an id */
+    /*removed margin and width*/
+    /*centered everything in this wrapper at 80% of the view port used */
+    background-color: #FFFFFF;
+    padding: 2em;
+    /*padding around the wrapper will be 2 em */
+}
+
+#mathero {
+    /*# is for id */
+    height: 300px;
+    background-image: url(yogamat.jpg);
+    background-size: 100% 100%;
+    /* sets height, image, and makes it take up all the space */
+    background-repeat: no-repeat;
+    /* makes it so the image does not repeat */
+    /*removed clear declaration*/
+    display: none;
+    /*set display to none to remove image to remove image that is too large for small screens.*/
+}
+
+#loungehero {
+    /* # is for id */
+    height: 300px;
+    background-image: url(yogalounge.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* pretty much the same as mathero but with a different image */
+    /*removed clear declaration*/
+    display: none;
+    /*set display to none to remove image that is too large for small screens*/
+}
+
+#flow {
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+/*making a new flex container*/
+/*flex-direction: row; */
+/*default is row, so not sure why it wants this, but trying to follow directions*/
+}
+
+.home {
+    /*. is for classes */
+    height: 20vh;
+    /*sets height to 20% of the viewport height */
+    padding-top: 2em;
+    padding-left: 10%;
+    /*removed font size and minimum height*/
+    /*set padding for the top and left sides for this class */
+}
+
+.content {
+    /* . is for classes */
+    height: 20vh;
+    padding-top: 2em;
+    padding-left: 10%;
+    /*removed bottom padding*/
+    /* configured height of content class and padding for the top and left sides */
+}
+
+/*removed one third and one half selectors*/
+
+body {
+    background-color: #0502a9;
+    color: #0502a9;
+    /* back ground and text color for the body  */
+    font-family: Verdana, Arial, sans-serif;
+    /* tells what font to use in the body */
+    /*removed max-width and min-width*/
+    margin: 0;
+    /*set the min and max width of the body section with no margin */
+}
+
+/*removed the h1 selector */
+
+h2 {
+    margin: 0;
+}
+
+section {
+    padding-left: .5em;
+    padding-right: .5em;
+    /*added section with padding on the left and right*/
+}
+
+li {
+    font-size: 90%;
+    /* font size in a list element will be slightly smaller */
+}
+
+footer {
+    /* removed background color for the footer */
+    font-size: small;
+    /*makes the font small */
+    font-style: italic;
+    /* makes the font italic */
+    text-align: center;
+    /* makes the text centered */
+    clear: right;
+    /*clearing the right float*/
+}
+
+table {
+    /*settings for table selector*/
+    border: 1px solid #0502a9;
+    /*sets border size and color*/
+    margin-bottom: 1em;
+    min-width: 400px;
+    /*added margin on the bottom and set a minimum width*/
+    border-collapse: collapse;
+    /*border collapse set to collapse will make it so there is no cell spacing*/
+}
+
+td, th {
+    padding: .5em;
+    border: 1px solid #0502a9;
+    /*sets padding and border on both table data (a cell) and table headers*/
+}
+
+tr:nth-of-type(even) {
+    background-color: #D7E8E9;
+    /*makes even rows this color*/
+}
+
+caption {
+    margin: 1em;
+    font: bold;
+    font-size: 120%;
+    /*settings for the captions*/
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    /*makes the form into a flex container with columns and no wrap*/
+}
+
+input, datalist textarea {
+    margin-bottom: .5em;
+    /*defines a bottom margin for the input and datalist textarea*/
+}
+
+@media (min-width: 600px) {
+    /*media query that will put the below into effect for anything greater than or equal to 600px wide*/
+    nav ul {
+        display: flex;
+        /*the display property allows us to configure the flex container*/
+        /*default is a row, so no added code was needed*/
+        flex-wrap: nowrap;
+        /*flex wrap no wrap makes it so there is no wrapping of items in the nav ul*/
+        justify-content: flex-end;
+        /*justifying content so that flex items begin at main end.*/
+    }
+    nav li {
+        width: 7em;
+        /*setting width to 7em*/
+    }
+    section {
+        padding-left: 2em;
+        padding-right: 2em;
+        /*setting padding*/
+    }
+    #mathero {
+        display: block;
+        padding-bottom: 1em;
+        /*bringing back image for that will display on larger screens*/
+    }
+    #loungehero {
+        display: block;
+        padding-bottom: 1em;
+        /*bringing back image for that will display on larger screens*/
+    }
+    #flow {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        /*making a new flex container*/
+        flex-direction: row;
+        /*default is row, so not sure why it wants this, but trying to follow directions*/
+    }
+    form {
+        width: 60%;
+        max-width: 40em;
+        display: grid;
+        gap: 1em;
+        grid-template-rows: auto;
+        grid-template-columns: 9em 1fr;
+        /*configures form to display as grid with different attributes*/
+    }
+    input[type=submit] {
+        grid-column: 2 / 2;
+        width: 9em;
+        /*puts submit button in second column and defines the width.*/
+    }
+}
+
+@media (min-width: 1024px) {
+    /*media selector for screens larger or equal to 1024px*/
+    header {
+        font-size: 120%;
+        /*bigger screen needs a bigger font*/
+    }
+    nav {
+        font: bold;
+        /*making the font bold*/
+    }
+    .home {
+        height: 50vh;
+        /*setting height to half the viewport*/
+        padding-top: 5em;
+        padding-left: 8em;
+        /*setting padding*/
+    }
+    .content {
+        height: 30vh;
+        padding-top: 2em;
+        padding-left: 8em;
+        /*setting height and padding*/
+    }
+    #wrapper {
+        margin: auto;
+        /*margin auto centers things horizontally*/
+        width: 80%;
+        /*set width*/
+    }
+}
